@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alwin Maharjan - Developer & AI Student</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+    <!-- Theme Selector -->
+    <div class="theme-selector" id="themeSelector">
+        <button class="theme-toggle" id="themeToggle">
+            <span class="theme-icon">🎨</span>
+        </button>
+        <div class="theme-options" id="themeOptions">
+            <button class="theme-option active" data-theme="dark">
+                <div class="theme-preview dark-preview"></div>
+                <span>Dark Mode</span>
+            </button>
+            <button class="theme-option" data-theme="light">
+                <div class="theme-preview light-preview"></div>
+                <span>Light Mode</span>
+            </button>
+            <button class="theme-option" data-theme="blue">
+                <div class="theme-preview blue-preview"></div>
+                <span>Ocean Blue</span>
+            </button>
+            <button class="theme-option" data-theme="purple">
+                <div class="theme-preview purple-preview"></div>
+                <span>Royal Purple</span>
+            </button>
+            <button class="theme-option" data-theme="green">
+                <div class="theme-preview green-preview"></div>
+                <span>Forest Green</span>
+            </button>
+            <button class="theme-option" data-theme="rose">
+                <div class="theme-preview rose-preview"></div>
+                <span>Rose Gold</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-text">AM</span>
+                    <div class="logo-pulse"></div>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-grid"></div>
+            <div class="hero-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-line">Hello, I'm</span>
+                        <h1 class="hero-name">Alwin Maharjan</h1>
+                        <div class="hero-roles">
+                            <span class="role active">Developer</span>
+                            <span class="role">AI Enthusiast</span>
+                            <span class="role">Problem Solver</span>
+                        </div>
+                    </div>
+                    <p class="hero-description">
+                        Passionate about crafting exceptional digital experiences through the elegant fusion of 
+                        <span class="highlight">artificial intelligence</span> and <span class="highlight">modern web technologies</span>. 
+                        Currently pursuing BSc Computing with AI at Islington College, where I explore the art of 
+                        transforming complex problems into intuitive, user-centered solutions.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">AWS Certifications</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Programming Languages</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <div class="btn-icon">→</div>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Let's Connect</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="profile-card">
+                            <div class="profile-image">
+                                <div class="profile-placeholder">
+                                    <span>AM</span>
+                                </div>
+                                <div class="profile-status">
+                                    <span class="status-dot"></span>
+                                    <span class="status-text">Available for work</span>
+                                </div>
+                            </div>
+                            <div class="profile-info">
+                                <h3>Alwin Maharjan</h3>
+                                <p>BSc Computing with AI</p>
+                                <p class="profile-location">📍 Kathmandu, Nepal</p>
+                            </div>
+                        </div>
+                        <div class="floating-cards">
+                            <div class="floating-card">
+                                <div class="card-icon">🌐</div>
+                                <span>Web Development</span>
+                            </div>
+                            <div class="floating-card">
+                                <div class="card-icon">📱</div>
+                                <span>Mobile Apps</span>
+                            </div>
+                            <div class="floating-card">
+                                <div class="card-icon">🤖</div>
+                                <span>AI & ML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Crafting Digital Excellence</h2>
+                <p class="section-subtitle">
+                    Where innovation meets implementation, and ideas transform into reality
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block">
+                        <h3>My Philosophy</h3>
+                        <p>
+                            I believe technology should be an invisible bridge between human intention and digital outcome. 
+                            Every line of code I write is guided by the principle that great software feels effortless to use 
+                            but is sophisticated in its implementation.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h3>Current Focus</h3>
+                        <p>
+                            As a BSc Computing with AI student at Islington College, I'm diving deep into the intersection 
+                            of artificial intelligence and practical application development. My specialization in Web and 
+                            Mobile App Development allows me to create solutions that are both intelligent and accessible.
+                        </p>
+                    </div>
+                    <div class="text-block">
+                        <h3>What Drives Me</h3>
+                        <p>
+                            The rapid evolution of technology fascinates me. I thrive on continuous learning, whether it's 
+                            mastering a new programming paradigm, exploring emerging AI frameworks, or understanding the 
+                            latest in user experience design.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-features">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h4>Problem Solving</h4>
+                        <p>Analytical thinking meets creative solutions</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>Fast Learning</h4>
+                        <p>Adapting quickly to new technologies</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔗</div>
+                        <h4>Collaboration</h4>
+                        <p>Building bridges between ideas and execution</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌟</div>
+                        <h4>Innovation</h4>
+                        <p>Pushing boundaries with emerging technologies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Expertise</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">💻</div>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">☕</div>
+                            <div class="skill-info">
+                                <h4>Java</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 85%"></div>
+                                    <span>Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🔧</div>
+                            <div class="skill-info">
+                                <h4>C Programming</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 80%"></div>
+                                    <span>Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🐍</div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 70%"></div>
+                                    <span>Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🟨</div>
+                            <div class="skill-info">
+                                <h4>JavaScript</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 75%"></div>
+                                    <span>Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">🌐</div>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🌟</div>
+                            <div class="skill-info">
+                                <h4>HTML/CSS</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 90%"></div>
+                                    <span>Expert</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📱</div>
+                            <div class="skill-info">
+                                <h4>Responsive Design</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 85%"></div>
+                                    <span>Advanced</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">⚛️</div>
+                            <div class="skill-info">
+                                <h4>React/Node.js</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 75%"></div>
+                                    <span>Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📲</div>
+                            <div class="skill-info">
+                                <h4>Mobile Development</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 70%"></div>
+                                    <span>Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-header">
+                        <div class="category-icon">☁️</div>
+                        <h3>Cloud & AI</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">🌊</div>
+                            <div class="skill-info">
+                                <h4>AWS Cloud</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 85%"></div>
+                                    <span>Certified</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">🧠</div>
+                            <div class="skill-info">
+                                <h4>Machine Learning</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 75%"></div>
+                                    <span>Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">📊</div>
+                            <div class="skill-info">
+                                <h4>Data Engineering</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 70%"></div>
+                                    <span>Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">💬</div>
+                            <div class="skill-info">
+                                <h4>NLP</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar" style="width: 65%"></div>
+                                    <span>Intermediate</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Portfolio</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A collection of my recent work and technical explorations</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">📱</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Mobile App Development</h3>
+                            <span class="project-status">In Progress</span>
+                        </div>
+                        <p>Creating intuitive mobile experiences with React Native and Flutter, focusing on performance optimization and AI integration for enhanced user engagement.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">AI/ML</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">🌐</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Web Applications</h3>
+                            <span class="project-status">Active</span>
+                        </div>
+                        <p>Full-stack web development with emphasis on scalability, accessibility, and modern design principles. Built with cutting-edge frameworks and cloud integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">🤖</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>AI & Machine Learning</h3>
+                            <span class="project-status">Research</span>
+                        </div>
+                        <p>Exploring the frontiers of artificial intelligence, from natural language processing to computer vision, with practical applications in real-world scenarios.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">AWS ML</span>
+                            <span class="tech-tag">OpenAI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span class="project-icon">☁️</span>
+                        </div>
+                        <div class="project-overlay">
+                            <button class="project-btn">View Details</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Cloud Solutions</h3>
+                            <span class="project-status">Certified</span>
+                        </div>
+                        <p>Designing and implementing scalable cloud architectures with focus on security, cost optimization, and high availability using AWS services.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">AWS</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Kubernetes</span>
+                            <span class="tech-tag">Terraform</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Learning Journey</span>
+                <h2 class="section-title">Education & Certifications</h2>
+            </div>
+            <div class="education-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">🎓</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">November 2024 - Present</div>
+                        <h3>BSc (Hons) Computing with AI</h3>
+                        <p class="timeline-org">Islington College, Kathmandu</p>
+                        <p class="timeline-desc">Specializing in Web Development and Mobile App Development with a focus on AI integration and modern software engineering practices.</p>
+                        <div class="timeline-highlights">
+                            <span class="highlight-tag">AI & Machine Learning</span>
+                            <span class="highlight-tag">Web Development</span>
+                            <span class="highlight-tag">Mobile Apps</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">📚</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">August 2022 - July 2024</div>
+                        <h3>Higher Secondary Education (+2 NEB)</h3>
+                        <p class="timeline-org">DAV College, Lalitpur</p>
+                        <p class="timeline-desc">Completed with distinction in science stream, building a strong foundation in mathematics, physics, and computer science.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">🏆</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - 2025</div>
+                        <h3>AWS Certifications</h3>
+                        <p class="timeline-org">Amazon Web Services</p>
+                        <p class="timeline-desc">Comprehensive cloud computing certifications covering foundations, machine learning, data engineering, and specialized AI services.</p>
+                        <div class="timeline-highlights">
+                            <span class="highlight-tag">Cloud Foundations</span>
+                            <span class="highlight-tag">ML Foundations</span>
+                            <span class="highlight-tag">Data Engineering</span>
+                            <span class="highlight-tag">ML for NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">💻</div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025</div>
+                        <h3>Java Object-Oriented Programming</h3>
+                        <p class="timeline-org">LinkedIn Learning</p>
+                        <p class="timeline-desc">Advanced certification in Java OOP principles, design patterns, and best practices for enterprise application development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Build Something Great Together</h2>
+                <p class="section-subtitle">Ready to discuss your project or explore new opportunities?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>alwinmaharjan@gmail.com</p>
+                            <a href="mailto:alwinmaharjan@gmail.com" class="contact-link">Send Message</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+977-9803461292</p>
+                            <a href="tel:+9779803461292" class="contact-link">Call Now</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Nakhipot-14, Lalitpur, Nepal</p>
+                            <span class="contact-link">Available for remote work</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required>
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <div class="btn-icon">✉️</div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/alwin-maharjan/" class="social-link" target="_blank">
+                    <div class="social-icon">💼</div>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Alwin-Kuri" class="social-link" target="_blank">
+                    <div class="social-icon">🐙</div>
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:alwinmaharjan@gmail.com" class="social-link">
+                    <div class="social-icon">📧</div>
+                    <span>Email</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Alwin Maharjan. Designed and developed with passion.</p>
+                    <p class="footer-quote">Turning ideas into reality, one line of code at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/themes.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>
