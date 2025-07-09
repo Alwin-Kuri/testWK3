@@ -3,6 +3,6 @@
 
 - Create some files and push to remote repo
 - Create new branch
-- Change something so that a conflict arises
+- Change something in readme so that a conflict arises
 - Resolve the conflict
 - Add README and gitignore
